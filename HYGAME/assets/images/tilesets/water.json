@@ -1,0 +1,29 @@
+{"frames": {
+
+"water1":
+{
+	"frame": {"x":0,"y":0,"w":64,"h":64},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":64,"h":64},
+	"sourceSize": {"w":32,"h":32}
+},
+"water2":
+{
+	"frame": {"x":64,"y":0,"w":64,"h":64},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":64,"h":64},
+	"sourceSize": {"w":64,"h":64}
+}},
+"animations": {
+	"water": ["water1","water2.png"]
+},
+"meta": {
+	"image": "water.png",
+	"format": "RGBA8888",
+	"size": {"w":128,"h":64},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:9329feca71915ea045a895f0b1d660c0:0775c4dde1bc55ff8d8a7f1d1f34f433:915b9e2c60291fd5f1d6c786f7274850$"
+}
+}
