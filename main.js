@@ -1,6 +1,6 @@
-import * as mathops from "/modules/useful_math.js";
-import map from "/modules/map.js";
-import * as drawops from "/modules/draw.js";
+import * as mathops from "https://thaums.github.io/hygame/modules/useful_math.js";
+import map from "https://thaums.github.io/hygame/modules/map.js";
+import * as drawops from "https://thaums.github.io/hygame/modules/draw.js";
 let type = "WebGL";
 if (!PIXI.utils.isWebGLSupported()) {
     type = "canvas";
@@ -16,8 +16,8 @@ document.body.appendChild(app.view);
 
 const loader = new PIXI.Loader;
 loader
-	.add('assets/images/tilesets/water.json')
-	.add('assets/images/misc/displacement_map1.png')
+	.add('https://thaums.github.io/hygame/assets/images/tilesets/water.json')
+	.add('https://thaums.github.io/hygame/assets/images/misc/displacement_map1.png')
 	.load(main);
 //loader.shared.resources['assets/images/tilesets/water.json'].baseTexture.mipmap=false;
 
@@ -30,15 +30,15 @@ let displ,displ2;
 function main() {
 	
 	displ = new PIXI.Sprite(
-		loader.resources['assets/images/misc/displacement_map1.png'].texture
+		loader.resources['https://thaums.github.io/hygame/assets/images/misc/displacement_map1.png'].texture
 	);
 	displ2 = new PIXI.Sprite(
-		loader.resources['assets/images/misc/displacement_map1.png'].texture
+		loader.resources['https://thaums.github.io/hygame/assets/images/misc/displacement_map1.png'].texture
 	);
 	displ.texture.baseTexture.wrapMode = PIXI.WRAP_MODES.REPEAT;
 	displ2.texture.baseTexture.wrapMode = PIXI.WRAP_MODES.REPEAT;
 	
-	water_array = drawops.create_water(loader.resources['assets/images/tilesets/water.json'],displ,displ2,app.view.width,app.view.height);
+	water_array = drawops.create_water(loader.resources['https://thaums.github.io/hygame/assets/images/tilesets/water.json'],displ,displ2,app.view.width,app.view.height);
 	//loader.reset();
 	app.stage.addChild(water_array[0]);
 	app.stage.addChild(water_array[1]);
