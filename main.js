@@ -1,4 +1,4 @@
-import * as mathops from "https://thaums.github.io/hygame/modules/useful_math.js";
+import * as mathops from "https://thaums.github.io/hygame/modules/usefulmath.js";
 import map from "https://thaums.github.io/hygame/modules/map.js";
 import * as drawops from "https://thaums.github.io/hygame/modules/draw.js";
 let type = "WebGL";
