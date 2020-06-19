@@ -1,4 +1,4 @@
-import * as mathops from "/modules/useful_math.js";
+import * as mathops from "https://thaums.github.io/hygame/modules/usefulmath.js";
 
 export function tilesetArray(tileset) {
 	let result = [];
